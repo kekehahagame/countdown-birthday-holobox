@@ -60,7 +60,7 @@ h2 {
     z-index: 4;
     display: block;
     margin-bottom: 15px;
-    font: normal 1.5em "Lato";
+    font: normal 1.5em;
     color: #1a1a1a;
     text-transform: uppercase;
 }
@@ -87,7 +87,8 @@ h2 {
     left: 0;
     right: 0;
     margin: auto;
-    font: normal 5.94em/107px "Lato";
+    font: normal 5.94em/107px Lato;
+    font-family: var(--font-inter);
     font-weight: 700;
     color: #e43737;
 }
@@ -103,6 +104,8 @@ h2 {
     height: 100%;
     border-bottom: 1px solid rgba(231, 24, 24, 0.1);
 }
+
+
 
 .countdown .figure .top {
     z-index: 3;
