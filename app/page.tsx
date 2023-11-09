@@ -6,8 +6,17 @@ export default function Home() {
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" />
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" />
 
-      <div className="wrap">
-        {/* <h1>BirthDay 10years    <strong>     CountDown</strong> </h1> */}
+      {/* <div >
+        <image href="/image/bg.jpg" width="100%" height="100%" id="background" />
+      </div> */}
+      {/* <source src="https://utfs.io/f/b8ae1360-72e5-4905-b4e5-6591e364908a-1e.mp4" type="video/mp4" /> */}
+
+
+      <div className="wrap ">
+        {/* <div className='title'>
+          <span>Go to</span>
+        </div> */}
+        {/* <p>Go to</p> */}
         <div className="countdown">
           <div className="bloc-time date" data-init-value="2023-11-08">
             <span className="count-title">Ngày</span>
@@ -104,12 +113,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
-        <video width={1440} height={2560} autoPlay controls>
-          <source src="https://utfs.io/f/b8ae1360-72e5-4905-b4e5-6591e364908a-1e.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+
+
+
 
       <Script src="/main.js" />
 
