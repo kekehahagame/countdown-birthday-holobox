@@ -7,6 +7,7 @@ export default function Home() {
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" />
 
       <div className="wrap">
+        {/* <h1>BirthDay 10years    <strong>     CountDown</strong> </h1> */}
         <div className="countdown">
           <div className="bloc-time date" data-init-value="2023-11-08">
             <span className="count-title">Ngày</span>

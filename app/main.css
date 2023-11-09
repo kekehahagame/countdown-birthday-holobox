@@ -24,10 +24,12 @@ h1 {
     font: 300 2.25em;
     text-transform: uppercase;
 
-    strong {
-        font-weight: 400;
-        color: #ea4c4c;
-    }
+
+}
+
+strong {
+    font-weight: 400;
+    color: #ea4c4c;
 }
 
 h2 {
@@ -42,13 +44,19 @@ h2 {
 }
 
 .countdown {
-    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000011;
+    border-radius: 50% 20% / 10% 40%;
+    width: 1200px;
+    height: 360px;
     margin: 0 auto;
 }
 
 .countdown .bloc-time {
     float: left;
-    margin-right: 45px;
+    margin-right: 49px;
     text-align: center;
 }
 
