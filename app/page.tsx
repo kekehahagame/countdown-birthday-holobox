@@ -10,7 +10,7 @@ export default function Home() {
         <image href="/image/bg.jpg" width="100%" height="100%" id="background" />
       </div> */}
       <div className="container">
-        <video autoPlay muted loop>
+        <video playsInline autoPlay muted loop>
           <source src="https://utfs.io/f/241afb95-cbe8-403b-850c-aaaecba42ca4-vdm58q.mp4" type="video/mp4" />
         </video>
 
