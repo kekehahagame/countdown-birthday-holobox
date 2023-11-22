@@ -37,16 +37,20 @@ var setNumber = function (digit, number, on) {
     }
 }
 var Countdown = {
+    target_date: new Date("2024-01-15 08:30:00").getTime(), // Target date: January 15, 2024
 
     init: function () {
-        console.log("okoko")
+        var seconds_remaining = Math.max(Math.floor((this.target_date - new Date().getTime()) / 1000), 0);
+        var day_remaining = Math.floor(seconds_remaining / (24 * 3600));
+
+        console.log("seconds_remaining=", seconds_remaining)
         var _hours = document.querySelectorAll('.hours');
         var _minutes = document.querySelectorAll('.minutes');
         var _seconds = document.querySelectorAll('.seconds');
 
         setInterval(function () {
             var date = new Date();
-            var hours = 90, minutes = date.getMinutes(), seconds = date.getSeconds();
+            var hours = day_remaining, minutes = date.getMinutes(), seconds = date.getSeconds();
 
             setNumber(_hours[0], Math.floor(hours / 10), 1);
             setNumber(_hours[1], hours % 10, 1);
