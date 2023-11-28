@@ -37,20 +37,22 @@ var setNumber = function (digit, number, on) {
     }
 }
 var Countdown = {
-    target_date: new Date("2024-01-15 08:30:00").getTime(), // Target date: January 15, 2024
+    target_date: new Date("2024-01-24 00:00:00").getTime(), // Target date: January 15, 2024
+    seconds_remaining: 0,
 
     init: function () {
         var seconds_remaining = Math.max(Math.floor((this.target_date - new Date().getTime()) / 1000), 0);
-        var day_remaining = Math.floor(seconds_remaining / (24 * 3600));
-        var hours_remaining = Math.floor((seconds_remaining % (24 * 3600) / 3600));
-        var minutes_remaining = Math.floor((seconds_remaining % 3600) / 60);
-
-        console.log("seconds_remaining=", seconds_remaining)
         var _days = document.querySelectorAll('.days');
         var _hours = document.querySelectorAll('.hours');
         var _minutes = document.querySelectorAll('.minutes');
 
         setInterval(function () {
+            // var seconds_remaining = Math.max(Math.floor((that.target_date - new Date().getTime()) / 1000), 0);
+            var day_remaining = Math.floor(seconds_remaining / (24 * 3600));
+            var hours_remaining = Math.floor((seconds_remaining % (24 * 3600) / 3600));
+            var minutes_remaining = Math.floor((seconds_remaining % 3600) / 60);
+            console.log("seconds_remaining=", seconds_remaining)
+
             var days = day_remaining, hours = hours_remaining, minutes = minutes_remaining;
 
             setNumber(_days[0], Math.floor(days / 10), 1);
@@ -61,6 +63,7 @@ var Countdown = {
 
             setNumber(_minutes[0], Math.floor(minutes / 10), 1);
             setNumber(_minutes[1], minutes % 10, 1);
+            seconds_remaining--;
         }, 1000);
     }
 }
