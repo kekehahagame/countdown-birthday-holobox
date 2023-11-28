@@ -51,7 +51,7 @@ var Countdown = {
             var day_remaining = Math.floor(seconds_remaining / (24 * 3600));
             var hours_remaining = Math.floor((seconds_remaining % (24 * 3600) / 3600));
             var minutes_remaining = Math.floor((seconds_remaining % 3600) / 60);
-            console.log("seconds_remaining=", seconds_remaining)
+            // console.log("seconds_remaining=", seconds_remaining)
 
             var days = day_remaining, hours = hours_remaining, minutes = minutes_remaining;
 
