@@ -6,83 +6,113 @@ export default function Home() {
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" />
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" />
 
-      {/* <div >
-        <image href="/image/bg.jpg" width="100%" height="100%" id="background" />
-      </div> */}
+
       <div className="container">
         <video playsInline autoPlay muted loop>
-          <source src="https://utfs.io/f/92262b69-8bcc-4c67-a7c9-23f72f923d30-i274jl.mp4" type="video/mp4" />
+          <source src="https://utfs.io/f/84841723-87f4-4b50-a946-6439c4bdfad5-ozp8ag.mp4" type="video/mp4" />
         </video>
 
-        <div className="clock">
-          {/* <div className='title'>
-            <span>BIRTHDAY 10YEAR</span>
-          </div> */}
-          <p>coming soon</p>
-          <div className="digit days">
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-          </div>
-          <div className="digit days">
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-          </div>
-          <p className="timeRefDays timedescription">days</p>
-          <div className="separator" />
-          <div className="digit hours">
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-          </div>
-          <div className="digit hours">
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-          </div>
-          <p className="timeRefHours timedescription">hours</p>
-          <div className="separator" />
-          <div className="digit minutes">
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-          </div>
-          <div className="digit minutes">
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-            <div className="segment" />
-          </div>
-          <p className="timeRefMinutes timedescription">minutes</p>
 
+        <div className="countdown">
+          <div className="bloc-time date" data-init-value="2023-11-08">
+            <span className="count-title">DAYS</span>
+            <div className="figure date date-1">
+              <span className="top">2</span>
+              <span className="top-back">
+                <span>2</span>
+              </span>
+              <span className="bottom">2</span>
+              <span className="bottom-back">
+                <span>2</span>
+              </span>
+            </div>
+            <div className="figure date date-2">
+              <span className="top">0</span>
+              <span className="top-back">
+                <span>0</span>
+              </span>
+              <span className="bottom">0</span>
+              <span className="bottom-back">
+                <span>0</span>
+              </span>
+            </div>
+          </div>
+          {/* End of date component */}
+          <div className="bloc-time hours" data-init-value={24}>
+            <span className="count-title">HOURS</span>
+            <div className="figure hours hours-1">
+              <span className="top">2</span>
+              <span className="top-back">
+                <span>2</span>
+              </span>
+              <span className="bottom">2</span>
+              <span className="bottom-back">
+                <span>2</span>
+              </span>
+            </div>
+            <div className="figure hours hours-2">
+              <span className="top">4</span>
+              <span className="top-back">
+                <span>4</span>
+              </span>
+              <span className="bottom">4</span>
+              <span className="bottom-back">
+                <span>4</span>
+              </span>
+            </div>
+          </div>
+          {/* <div className="bloc-time min" data-init-value={0}>
+            <span className="count-title">Phút</span>
+            <div className="figure min min-1">
+              <span className="top">0</span>
+              <span className="top-back">
+                <span>0</span>
+              </span>
+              <span className="bottom">0</span>
+              <span className="bottom-back">
+                <span>0</span>
+              </span>
+            </div>
+            <div className="figure min min-2">
+              <span className="top">0</span>
+              <span className="top-back">
+                <span>0</span>
+              </span>
+              <span className="bottom">0</span>
+              <span className="bottom-back">
+                <span>0</span>
+              </span>
+            </div>
+          </div> */}
+          {/* <div className="bloc-time sec" data-init-value={0}>
+            <span className="count-title">Giây</span>
+            <div className="figure sec sec-1">
+              <span className="top">0</span>
+              <span className="top-back">
+                <span>0</span>
+              </span>
+              <span className="bottom">0</span>
+              <span className="bottom-back">
+                <span>0</span>
+              </span>
+            </div>
+            <div className="figure sec sec-2">
+              <span className="top">0</span>
+              <span className="top-back">
+                <span>0</span>
+              </span>
+              <span className="bottom">0</span>
+              <span className="bottom-back">
+                <span>0</span>
+              </span>
+            </div>
+          </div> */}
         </div>
 
+
+
       </div>
-      <Script src="/main2.js" />
+      <Script src="/main.js" />
     </div>
   )
 }
