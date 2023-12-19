@@ -8,7 +8,7 @@ export default function Home() {
 
 
       <div className="container">
-        <video playsInline autoPlay loop>
+        <video controls playsInline autoPlay loop>
           <source src="https://utfs.io/f/469030ec-3d24-4ebc-a897-50f132432a2f-d288e7.mp4" type="video/mp4" />
         </video>
 
