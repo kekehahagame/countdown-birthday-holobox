@@ -7,7 +7,7 @@ var Countdown = {
     // Params
     countdown_interval: null,
     total_seconds: 0,
-    target_date: new Date("2024-01-15 00:00:00").getTime(), // Target date: January 15, 2024
+    target_date: new Date("2024-01-24 00:00:00").getTime(), // Target date: January 15, 2024
 
     // Initialize the countdown
     init: function () {
