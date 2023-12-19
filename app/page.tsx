@@ -8,8 +8,8 @@ export default function Home() {
 
 
       <div className="container">
-        <video playsInline autoPlay muted loop>
-          <source src="https://utfs.io/f/84841723-87f4-4b50-a946-6439c4bdfad5-ozp8ag.mp4" type="video/mp4" />
+        <video playsInline autoPlay loop>
+          <source src="https://utfs.io/f/469030ec-3d24-4ebc-a897-50f132432a2f-d288e7.mp4" type="video/mp4" />
         </video>
 
 
