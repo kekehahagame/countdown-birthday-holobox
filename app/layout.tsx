@@ -17,7 +17,7 @@ export default function Layout({
   children: ReactNode
 }) {
   return (
-    <html lang="en" className={lato.className}>
+    <html lang="en" >
       <body >{children}</body>
     </html>
   )
