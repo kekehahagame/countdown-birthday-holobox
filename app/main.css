@@ -22,19 +22,20 @@ body {
 
 video {
     width: inherit;
+
 }
 
 .container {
     position: absolute;
-    height: 2560px;
-    width: 1440px;
+    width: 1920px;
+    height: 1080px;
     align-items: center;
 }
 
 .countdown {
     height: 200px;
     position: absolute;
-    top: 9.5%;
+    top: 29.5%;
     left: 81.5%;
     width: 900px;
     margin-left: -450px;
